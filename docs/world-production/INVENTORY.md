@@ -1,0 +1,112 @@
+# Montemurlo: raggio 1 km dal municipio
+
+Centro: 43.927196148087795, 11.036973530040587. Area circolare: 3,142 km².
+
+1278 sagome, 584 percorsi, 13 scale mappate e 67 muri/recinzioni. 101 settori di lavorazione (intersecano il cerchio).
+
+**Stato: base geografica. Nessun settore intero certificato come ricostruzione visiva completa.**
+Le scale non mappate, gli ingressi e gli altri dettagli vanno cercati nelle foto: l'assenza da OSM non equivale ad assenza reale.
+
+| Settore | Edifici | Percorsi | Scale mappate | Stato |
+|---|---:|---:|---:|---|
+| Ep0-Np0 | 32 | 33 | 2 | in_progress |
+| Em1-Np0 | 24 | 34 | 2 | geographic_base |
+| Ep0-Nm1 | 54 | 16 | 0 | geographic_base |
+| Ep0-Np1 | 35 | 11 | 0 | geographic_base |
+| Ep1-Np0 | 51 | 9 | 2 | geographic_base |
+| Em1-Nm1 | 45 | 14 | 0 | geographic_base |
+| Em1-Np1 | 74 | 22 | 0 | geographic_base |
+| Ep1-Nm1 | 53 | 18 | 1 | geographic_base |
+| Ep1-Np1 | 31 | 8 | 0 | geographic_base |
+| Em2-Np0 | 20 | 8 | 0 | geographic_base |
+| Ep0-Nm2 | 37 | 6 | 0 | geographic_base |
+| Ep0-Np2 | 8 | 4 | 0 | geographic_base |
+| Ep2-Np0 | 10 | 4 | 0 | geographic_base |
+| Em1-Nm2 | 12 | 22 | 0 | geographic_base |
+| Em1-Np2 | 11 | 10 | 0 | geographic_base |
+| Em2-Nm1 | 19 | 13 | 0 | geographic_base |
+| Em2-Np1 | 32 | 22 | 0 | geographic_base |
+| Ep1-Nm2 | 50 | 7 | 0 | geographic_base |
+| Ep1-Np2 | 3 | 1 | 0 | geographic_base |
+| Ep2-Nm1 | 24 | 7 | 0 | geographic_base |
+| Ep2-Np1 | 7 | 5 | 0 | geographic_base |
+| Em2-Nm2 | 8 | 18 | 0 | geographic_base |
+| Em2-Np2 | 13 | 11 | 0 | geographic_base |
+| Ep2-Nm2 | 30 | 3 | 0 | geographic_base |
+| Ep2-Np2 | 0 | 0 | 0 | geographic_base |
+| Em3-Np0 | 19 | 3 | 0 | geographic_base |
+| Ep0-Nm3 | 32 | 8 | 0 | geographic_base |
+| Ep0-Np3 | 0 | 1 | 0 | geographic_base |
+| Ep3-Np0 | 2 | 9 | 0 | geographic_base |
+| Em1-Nm3 | 11 | 12 | 0 | geographic_base |
+| Em1-Np3 | 13 | 1 | 0 | geographic_base |
+| Em3-Nm1 | 11 | 6 | 0 | geographic_base |
+| Em3-Np1 | 47 | 3 | 0 | geographic_base |
+| Ep1-Nm3 | 16 | 11 | 0 | geographic_base |
+| Ep1-Np3 | 0 | 0 | 0 | geographic_base |
+| Ep3-Nm1 | 1 | 3 | 0 | geographic_base |
+| Ep3-Np1 | 11 | 18 | 5 | geographic_base |
+| Em2-Nm3 | 2 | 35 | 0 | geographic_base |
+| Em2-Np3 | 14 | 7 | 0 | geographic_base |
+| Em3-Nm2 | 15 | 6 | 0 | geographic_base |
+| Em3-Np2 | 34 | 4 | 0 | geographic_base |
+| Ep2-Nm3 | 0 | 2 | 0 | geographic_base |
+| Ep2-Np3 | 0 | 0 | 0 | geographic_base |
+| Ep3-Nm2 | 8 | 2 | 0 | geographic_base |
+| Ep3-Np2 | 0 | 0 | 0 | geographic_base |
+| Em4-Np0 | 2 | 0 | 0 | geographic_base |
+| Ep0-Nm4 | 18 | 6 | 0 | geographic_base |
+| Ep0-Np4 | 0 | 0 | 0 | geographic_base |
+| Ep4-Np0 | 1 | 1 | 0 | geographic_base |
+| Em1-Nm4 | 0 | 6 | 0 | geographic_base |
+| Em1-Np4 | 13 | 1 | 0 | geographic_base |
+| Em4-Nm1 | 3 | 3 | 0 | geographic_base |
+| Em4-Np1 | 30 | 6 | 0 | geographic_base |
+| Ep1-Nm4 | 6 | 6 | 0 | geographic_base |
+| Ep1-Np4 | 0 | 0 | 0 | geographic_base |
+| Ep4-Nm1 | 10 | 2 | 0 | geographic_base |
+| Ep4-Np1 | 3 | 3 | 1 | geographic_base |
+| Em3-Nm3 | 21 | 13 | 0 | geographic_base |
+| Em3-Np3 | 25 | 0 | 0 | geographic_base |
+| Ep3-Nm3 | 7 | 2 | 0 | geographic_base |
+| Ep3-Np3 | 0 | 0 | 0 | geographic_base |
+| Em2-Nm4 | 17 | 6 | 0 | geographic_base |
+| Em2-Np4 | 24 | 5 | 0 | geographic_base |
+| Em4-Nm2 | 14 | 3 | 0 | geographic_base |
+| Em4-Np2 | 37 | 5 | 0 | geographic_base |
+| Ep2-Nm4 | 1 | 2 | 0 | geographic_base |
+| Ep2-Np4 | 1 | 2 | 0 | geographic_base |
+| Ep4-Nm2 | 17 | 5 | 0 | geographic_base |
+| Ep4-Np2 | 10 | 1 | 0 | geographic_base |
+| Em3-Nm4 | 5 | 17 | 0 | geographic_base |
+| Em3-Np4 | 7 | 5 | 0 | geographic_base |
+| Em4-Nm3 | 6 | 2 | 0 | geographic_base |
+| Em4-Np3 | 19 | 1 | 0 | geographic_base |
+| Em5-Np0 | 0 | 0 | 0 | geographic_base |
+| Ep0-Nm5 | 0 | 7 | 0 | geographic_base |
+| Ep0-Np5 | 3 | 2 | 0 | geographic_base |
+| Ep3-Nm4 | 1 | 0 | 0 | geographic_base |
+| Ep3-Np4 | 2 | 1 | 0 | geographic_base |
+| Ep4-Nm3 | 24 | 2 | 0 | geographic_base |
+| Ep4-Np3 | 1 | 0 | 0 | geographic_base |
+| Ep5-Np0 | 0 | 1 | 0 | geographic_base |
+| Em1-Nm5 | 0 | 0 | 0 | geographic_base |
+| Em1-Np5 | 1 | 0 | 0 | geographic_base |
+| Em5-Nm1 | 0 | 2 | 0 | geographic_base |
+| Em5-Np1 | 0 | 1 | 0 | geographic_base |
+| Ep1-Nm5 | 0 | 6 | 0 | geographic_base |
+| Ep1-Np5 | 0 | 0 | 0 | geographic_base |
+| Ep5-Nm1 | 14 | 4 | 0 | geographic_base |
+| Ep5-Np1 | 0 | 1 | 0 | geographic_base |
+| Em2-Nm5 | 0 | 2 | 0 | geographic_base |
+| Em2-Np5 | 6 | 1 | 0 | geographic_base |
+| Em5-Nm2 | 1 | 1 | 0 | geographic_base |
+| Em5-Np2 | 0 | 2 | 0 | geographic_base |
+| Ep2-Nm5 | 0 | 2 | 0 | geographic_base |
+| Ep2-Np5 | 1 | 4 | 0 | geographic_base |
+| Ep5-Nm2 | 8 | 4 | 0 | geographic_base |
+| Ep5-Np2 | 0 | 1 | 0 | geographic_base |
+| Em4-Nm4 | 0 | 0 | 0 | geographic_base |
+| Em4-Np4 | 0 | 0 | 0 | geographic_base |
+| Ep4-Nm4 | 0 | 0 | 0 | geographic_base |
+| Ep4-Np4 | 0 | 0 | 0 | geographic_base |

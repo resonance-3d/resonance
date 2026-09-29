@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+test-results/
+*.log
+__pycache__/
+.venv/
+
+# Download originali e intermedi rigenerabili: conservati localmente.
+docs/elevation-research/sources/*.zip
+docs/elevation-research/*.npz
+docs/world-production/sources/*.zip
+docs/world-production/sources/previous-*
+docs/world-production/sources/expanded-montemurlo.json
+docs/world-production/staging/*.npz
+docs/world-production/staging/terrain/

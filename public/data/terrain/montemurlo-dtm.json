@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "width": 2246,
+  "height": 2246,
+  "bounds": {
+    "west": 11.023,
+    "south": 43.9171,
+    "east": 11.051,
+    "north": 43.9373
+  },
+  "encoding": "uint16-le-centimetres",
+  "rowOrder": "north-to-south",
+  "blendMetres": 45,
+  "geoidCorners": [
+    44.99388,
+    44.94336,
+    45.13767,
+    45.08959
+  ],
+  "surveyYear": "2008\u20132010",
+  "source": "Fonte dei dati: Regione Toscana \u2013 Rilievi LIDAR",
+  "sourceUrl": "https://dati.toscana.it/it/dataset/lidar",
+  "license": "CC BY 4.0",
+  "horizontalAccuracyMetres": 4,
+  "verticalAlignment": "Approximate EGM96 separation; source geoid not identified.",
+  "binary": "montemurlo-dtm.bin",
+  "sourceSheets": [
+    {
+      "file": "20j09-dtm-2008.zip",
+      "year": 2008,
+      "validSamples": 975788
+    },
+    {
+      "file": "20j10-dtm-2008.zip",
+      "year": 2008,
+      "validSamples": 1827335
+    },
+    {
+      "file": "20j17-dtm-2008.zip",
+      "year": 2008,
+      "validSamples": 107802
+    },
+    {
+      "file": "20j18-dtm-2008.zip",
+      "year": 2008,
+      "validSamples": 170329
+    },
+    {
+      "file": "20j01-dtm-2010.zip",
+      "year": 2010,
+      "validSamples": 768390
+    },
+    {
+      "file": "20j02-dtm-2010.zip",
+      "year": 2010,
+      "validSamples": 1431063
+    },
+    {
+      "file": "20j09-dtm-2010.zip",
+      "year": 2010,
+      "validSamples": 247451
+    },
+    {
+      "file": "20j10-dtm-2010.zip",
+      "year": 2010,
+      "validSamples": 865190
+    }
+  ]
+}

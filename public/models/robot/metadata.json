@@ -1,0 +1,23 @@
+{
+  "heightMeters": 1.75,
+  "sourceMinY": -0.020304438673106995,
+  "sourceMaxY": 4.440917881229622,
+  "scale": 0.3922691752421243,
+  "baseOffset": 0.007964805412053973,
+  "animations": [
+    "Dance",
+    "Death",
+    "Idle",
+    "Jump",
+    "No",
+    "Punch",
+    "Running",
+    "Sitting",
+    "Standing",
+    "ThumbsUp",
+    "Walking",
+    "WalkJump",
+    "Wave",
+    "Yes"
+  ]
+}

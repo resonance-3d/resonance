@@ -1,0 +1,199 @@
+{
+  "type": "FeatureCollection",
+  "source": "CARTA TECNICA DELLA REGIONE TOSCANA, CTR 1:2000, 20J02, 2000",
+  "license": "CC BY 3.0",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.037997633370413,
+          43.92890846626921
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 89.39,
+        "record": 2322,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.038248959232014,
+          43.92911807932255
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 89.41,
+        "record": 2326,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.039191203444727,
+          43.929014833472365
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 84.65,
+        "record": 2334,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.038315131002811,
+          43.92974235297641
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 95.25,
+        "record": 2348,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.037956757219693,
+          43.93006061832871
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 91.46,
+        "record": 2350,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.039056932694931,
+          43.929503944607674
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 91.14,
+        "record": 2352,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.038634441969055,
+          43.92972477112159
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 92.03,
+        "record": 2354,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.038641898403514,
+          43.93019460653869
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 97.46,
+        "record": 2362,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.040090677538105,
+          43.92907809306001
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 85.84,
+        "record": 2364,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03950779963501,
+          43.92998585206658
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 97.49,
+        "record": 2400,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.040013631686147,
+          43.929695829873005
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 97.25,
+        "record": 2402,
+        "sheet": "20J02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.039834519918044,
+          43.93041091327906
+        ]
+      },
+      "properties": {
+        "surveyYear": 2000,
+        "height": 104.5,
+        "record": 2688,
+        "sheet": "20J02"
+      }
+    }
+  ]
+}

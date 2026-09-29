@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/WMS_MS_Capabilities.dtd"
+ [
+ <!ELEMENT VendorSpecificCapabilities EMPTY>
+ ]>  <!-- end of DOCTYPE declaration -->
+
+<WMT_MS_Capabilities version="1.1.1">
+<Service>
+  <Name>OGC:WMS</Name>
+  <Title>Geoscopio_wms OFC_RT</Title>
+  <Abstract>Servizio OGC di tipo WMS fornito da Regione Toscana-SIPT (Settore Sistema Informativo e Pianificazione del Territorio) dedicato specificamente alla consultazione delle ortofoto 2021,2023, 2024/2025. Le ortofoto, che coprono l’intero territorio regionale, hanno un GSD pari a 20 cm e provengono dall’elaborazione di fotogrammi ottenuti tramite voli realizzati ad una quota media pari a 2700 mslm.</Abstract>
+  <KeywordList>
+      <Keyword>ortofotocarta</Keyword>
+      <Keyword>foto</Keyword>
+  </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/>
+  <ContactInformation>
+    <ContactPersonPrimary>
+      <ContactPerson>Sistema informativo e Pianificazione del territorio</ContactPerson>
+      <ContactOrganization>Regione Toscana - Direzione Urbanistica</ContactOrganization>
+    </ContactPersonPrimary>
+      <ContactPosition>custodian</ContactPosition>
+    <ContactAddress>
+        <AddressType>postal</AddressType>
+        <Address>Via di Novoli, 26</Address>
+        <City>Firenze</City>
+        <StateOrProvince>Regione Toscana</StateOrProvince>
+        <PostCode>50127</PostCode>
+        <Country>Italy</Country>
+    </ContactAddress>
+  <ContactElectronicMailAddress>infrastruttura.geografica@regione.toscana.it</ContactElectronicMailAddress>
+  </ContactInformation>
+  <Fees>none</Fees>
+  <AccessConstraints>none</AccessConstraints>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/png</Format>
+      <Format>image/png; mode=8bit</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/vnd.jpeg-png</Format>
+      <Format>image/vnd.jpeg-png8</Format>
+      <Format>application/x-pdf</Format>
+      <Format>image/svg+xml</Format>
+      <Format>image/tiff</Format>
+      <Format>application/vnd.google-earth.kml+xml</Format>
+      <Format>application/vnd.google-earth.kmz</Format>
+      <Format>application/vnd.mapbox-vector-tile</Format>
+      <Format>application/x-protobuf</Format>
+      <Format>application/json</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetFeatureInfo>
+      <Format>text/gml</Format>
+      <Format>text/html</Format>
+      <Format>text/plain</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetFeatureInfo>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+    <Format>application/vnd.ogc.se_inimage</Format>
+    <Format>application/vnd.ogc.se_blank</Format>
+  </Exception>
+  <VendorSpecificCapabilities />
+  <Layer queryable="1">
+    <Name>rt_ofc_rt</Name>
+    <Title>Geoscopio_wms OFC_RT</Title>
+    <Abstract>Servizio OGC di tipo WMS fornito da Regione Toscana-SIPT (Settore Sistema Informativo e Pianificazione del Territorio) dedicato specificamente alla consultazione delle ortofoto 2021,2023, 2024/2025. Le ortofoto, che coprono l’intero territorio regionale, hanno un GSD pari a 20 cm e provengono dall’elaborazione di fotogrammi ottenuti tramite voli realizzati ad una quota media pari a 2700 mslm.</Abstract>
+    <KeywordList>
+        <Keyword>ortofotocarta</Keyword>
+        <Keyword>foto</Keyword>
+    </KeywordList>
+    <SRS>EPSG:3003</SRS>
+    <SRS>EPSG:3004</SRS>
+    <SRS>EPSG:6706</SRS>
+    <SRS>EPSG:6707</SRS>
+    <SRS>EPSG:6708</SRS>
+    <SRS>EPSG:7791</SRS>
+    <SRS>EPSG:6709</SRS>
+    <SRS>EPSG:23032</SRS>
+    <SRS>EPSG:23033</SRS>
+    <SRS>EPSG:23034</SRS>
+    <SRS>EPSG:25832</SRS>
+    <SRS>EPSG:25833</SRS>
+    <SRS>EPSG:4326</SRS>
+    <SRS>EPSG:4230</SRS>
+    <SRS>EPSG:4258</SRS>
+    <SRS>EPSG:4265</SRS>
+    <SRS>EPSG:4806</SRS>
+    <SRS>EPSG:3857</SRS>
+    <SRS>EPSG:32632</SRS>
+    <SRS>EPSG:32633</SRS>
+    <LatLonBoundingBox minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+    <BoundingBox SRS="EPSG:6707"
+                minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+    <Attribution>
+        <LogoURL width="160" height="70">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it:80/wmsraster/immagini/logo_geoscopio_wms.png"/>
+          </LogoURL>
+    </Attribution>
+    <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k25.32bit</Name>
+        <Title>OFC 2025 5k (20cm) RGB realizzate a partire da fotogrammi di proprietà AGEA.  Immagini a 8 bit di colore.</Title>
+        <Abstract>OFC 2025 5k (20cm) RGB realizzate a partire da fotogrammi di proprietà AGEA. I Diritti di proprietà delle Ortofoto 2025 sono di Regione Toscana. Scala di visibilità 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: parziale. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="1" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k25.32bit.qu</Name>
+        <Title>OFC 2025 5k - 32 bit colore - Quadro di unione</Title>
+        <Abstract>Quadro di unione per sezioni del territorio coperto relativo alle OFC 2025, taglio cartografico 1:5.000.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:3003"
+                    minx="1.55303e+06" miny="4.80606e+06" maxx="1.72883e+06" maxy="4.9167e+06" />
+        <BoundingBox SRS="EPSG:3004"
+                    minx="2.08715e+06" miny="4.80708e+06" maxx="2.27073e+06" maxy="4.93034e+06" />
+        <BoundingBox SRS="EPSG:6706"
+                    minx="9.654670" miny="43.372368" maxx="11.871560" maxy="44.401468" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <BoundingBox SRS="EPSG:6708"
+                    minx="67150.8" miny="4.80707e+06" maxx="250730" maxy="4.93032e+06" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <BoundingBox SRS="EPSG:6709"
+                    minx="-418947" miny="4.84324e+06" maxx="-227396" maxy="4.97935e+06" />
+        <BoundingBox SRS="EPSG:23032"
+                    minx="553083" miny="4.80624e+06" maxx="728885" maxy="4.91688e+06" />
+        <BoundingBox SRS="EPSG:23033"
+                    minx="67216.9" miny="4.80726e+06" maxx="250799" maxy="4.93051e+06" />
+        <BoundingBox SRS="EPSG:23034"
+                    minx="-418896" miny="4.84343e+06" maxx="-227342" maxy="4.97954e+06" />
+        <BoundingBox SRS="EPSG:25832"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <BoundingBox SRS="EPSG:25833"
+                    minx="67150.8" miny="4.80707e+06" maxx="250730" maxy="4.93032e+06" />
+        <BoundingBox SRS="EPSG:4326"
+                    minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:4230"
+                    minx="9.655644" miny="43.373347" maxx="11.872518" maxy="44.402441" />
+        <BoundingBox SRS="EPSG:4258"
+                    minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:4265"
+                    minx="9.654969" miny="43.371714" maxx="11.871792" maxy="44.400817" />
+        <BoundingBox SRS="EPSG:4806"
+                    minx="-2.797357" miny="43.371710" maxx="-0.580542" maxy="44.400808" />
+        <BoundingBox SRS="EPSG:3857"
+                    minx="1.07475e+06" miny="5.36882e+06" maxx="1.32154e+06" maxy="5.52778e+06" />
+        <BoundingBox SRS="EPSG:32632"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <BoundingBox SRS="EPSG:32633"
+                    minx="67150.8" miny="4.80707e+06" maxx="250730" maxy="4.93032e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <Style>
+          <Name>contorno_blu_fine_senza_etichetta</Name>
+          <Title>contorno_blu_fine_senza_etichetta</Title>
+          <LegendURL width="225" height="53">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k25.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_senza_etichetta"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>contorno_blu_fine_con_etichetta</Name>
+          <Title>contorno_blu_fine_con_etichetta</Title>
+          <LegendURL width="225" height="53">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k25.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_con_etichetta"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k25.32bit.4R2G3B</Name>
+        <Title>OFC 2025 5k (20cm) realizzate a partire da fotogrammi di proprietà AGEA - 4R 2G 3B NirGB Modified False Color (studi di vegetazione di conifere-decidue-erba)</Title>
+        <Abstract>OFC 2025 5k (20cm) RGB realizzate a partire da fotogrammi di proprietà AGEA. Riproduzione in falsi colori 4R-2G-3B per gli studi sulla vegetazione (le conifere appaiono rosso scuro, le latifoglie tendono ad essere rappresentate in rossi più luminosi mentre le aree erbose tendono a presentarsi con sfumature rosso-arancio). Copertura del territorio: completa. Foto a 8 bit/canale. </Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k25.32bit.1R4G2B</Name>
+        <Title>OFC 2025 5k (20cm) realizzate a partire da fotogrammi di proprietà AGEA - 1R 4G 2B  RNirG False Color</Title>
+        <Abstract>OFC 2025 5k (20cm) riproduzione in falsi colori 1R-4G-2B in falsi colori. I Diritti di proprieta&#39; delle Ortofoto 2025 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k25.32bit.nir</Name>
+        <Title>OFC 2025 20cm - 8 bit - Banda NiR</Title>
+        <Abstract>OFC 2025 5k (20cm) RGB realizzate a partire da fotogrammi di proprietà AGEA. Immagine a livelli di grigio banda NiR. Copertura del territorio: completa. Foto a  8 bit/canale.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.654670" miny="43.372367" maxx="11.871561" maxy="44.401467" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.80604e+06" maxx="728802" maxy="4.91668e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k24.32bit</Name>
+        <Title>OFC 2024/2025 (GSD 20cm) di proprietà di  Regione Toscana. Esecuzione volo CGR SpA (Compagnia Generale Ripreseaeree). Copertura del territorio: completa. Immagini a 8 bit di colore.</Title>
+        <Abstract>OFC 2024/2025 5k (20cm) RGB. I Diritti di proprieta&#39; delle Ortofoto 2024/2025 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459264" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775239" maxy="4.92775e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="1" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k24.32bit.qu</Name>
+        <Title>OFC 2024/2025 5k - 32 bit colore - Quadro di unione</Title>
+        <Abstract>Quadro di unione per sezioni del territorio coperto relativo alle OFC 2024/2025, taglio cartografico 1:5.000.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:3003"
+                    minx="1.55303e+06" miny="4.67675e+06" maxx="1.77527e+06" maxy="4.92777e+06" />
+        <BoundingBox SRS="EPSG:3004"
+                    minx="2.07792e+06" miny="4.67482e+06" maxx="2.31785e+06" maxy="4.9414e+06" />
+        <BoundingBox SRS="EPSG:6706"
+                    minx="9.642499" miny="42.194433" maxx="12.459251" maxy="44.501104" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:6708"
+                    minx="57920.8" miny="4.67481e+06" maxx="297844" maxy="4.94138e+06" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:6709"
+                    minx="-437611" miny="4.70787e+06" maxx="-179587" maxy="4.99041e+06" />
+        <BoundingBox SRS="EPSG:23032"
+                    minx="553083" miny="4.67694e+06" maxx="775322" maxy="4.92795e+06" />
+        <BoundingBox SRS="EPSG:23033"
+                    minx="57984.2" miny="4.675e+06" maxx="297914" maxy="4.94158e+06" />
+        <BoundingBox SRS="EPSG:23034"
+                    minx="-437562" miny="4.70806e+06" maxx="-179532" maxy="4.9906e+06" />
+        <BoundingBox SRS="EPSG:25832"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:25833"
+                    minx="57920.8" miny="4.67481e+06" maxx="297844" maxy="4.94138e+06" />
+        <BoundingBox SRS="EPSG:4326"
+                    minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:4230"
+                    minx="9.643428" miny="42.195436" maxx="12.460200" maxy="44.502075" />
+        <BoundingBox SRS="EPSG:4258"
+                    minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:4265"
+                    minx="9.642755" miny="42.193783" maxx="12.459462" maxy="44.500451" />
+        <BoundingBox SRS="EPSG:4806"
+                    minx="-2.809540" miny="42.193786" maxx="0.007126" maxy="44.500443" />
+        <BoundingBox SRS="EPSG:3857"
+                    minx="1.0734e+06" miny="5.19015e+06" maxx="1.38696e+06" maxy="5.54332e+06" />
+        <BoundingBox SRS="EPSG:32632"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:32633"
+                    minx="57920.8" miny="4.67481e+06" maxx="297844" maxy="4.94138e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <Style>
+          <Name>contorno_blu_fine_senza_etichetta</Name>
+          <Title>contorno_blu_fine_senza_etichetta</Title>
+          <LegendURL width="31" height="30">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k24.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_senza_etichetta"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>contorno_blu_fine_con_etichetta</Name>
+          <Title>contorno_blu_fine_con_etichetta</Title>
+          <LegendURL width="31" height="30">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k24.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_con_etichetta"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k24.32bit.4R2G3B</Name>
+        <Title>OFC 2024/2025 20cm - 32 bit colore - 4R 2G 3B NirGB Modified False Color (studi di vegetazione di conifere-decidue-erba)</Title>
+        <Abstract>OFC 2024/2025 (GSD 20cm) di proprietà di  Regione Toscana. Riproduzione in falsi colori 4R-2G-3B per gli studi sulla vegetazione (le conifere appaiono rosso scuro, le latifoglie tendono ad essere rappresentate in rossi più luminosi mentre le aree erbose tendono a presentarsi con sfumature rosso-arancio). Copertura del territorio: completa. Foto a 8 bit/canale. </Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k24.32bit.1R4G2B</Name>
+        <Title>OFC 2024/2025 20cm - 32 bit colore - 1R 4G 2B  RNirG False Color</Title>
+        <Abstract>OFC 2024/2025 5k (20cm) riproduzione in falsi colori 1R-4G-2B in falsi colori. I Diritti di proprieta&#39; delle Ortofoto 2024/2025 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k24.32bit.nir</Name>
+        <Title>OFC 2024/2025 20cm - 8 bit - Banda NiR</Title>
+        <Abstract>OFC 2024/2025 (GSD 20cm) di proprietà di  Regione Toscana. Immagine a livelli di grigio banda NiR. Copertura del territorio: completa. Foto a  8 bit/canale.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k23.32bit</Name>
+        <Title>OFC 2023 (GSD 20cm) di proprietà di  Regione Toscana. Esecuzione volo CGR SpA (Compagnia Generale Ripreseaeree). Copertura del territorio: completa. Immagini a 8 bit di colore.</Title>
+        <Abstract>OFC 2023 5K (20cm) RGB. I Diritti di proprieta&#39; delle Ortofoto 2023 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="1" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k23.32bit.qu</Name>
+        <Title>OFC 2023 5k - 32 bit colore - Quadro di unione</Title>
+        <Abstract>Quadro di unione per sezioni del territorio coperto relativo alle OFC 2023, taglio cartografico 1:5.000.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:3003"
+                    minx="1.55303e+06" miny="4.67675e+06" maxx="1.77527e+06" maxy="4.92777e+06" />
+        <BoundingBox SRS="EPSG:3004"
+                    minx="2.07792e+06" miny="4.67482e+06" maxx="2.31785e+06" maxy="4.9414e+06" />
+        <BoundingBox SRS="EPSG:6706"
+                    minx="9.642499" miny="42.194433" maxx="12.459251" maxy="44.501104" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:6708"
+                    minx="57920.8" miny="4.67481e+06" maxx="297844" maxy="4.94138e+06" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:6709"
+                    minx="-437611" miny="4.70787e+06" maxx="-179587" maxy="4.99041e+06" />
+        <BoundingBox SRS="EPSG:23032"
+                    minx="553083" miny="4.67694e+06" maxx="775322" maxy="4.92795e+06" />
+        <BoundingBox SRS="EPSG:23033"
+                    minx="57984.2" miny="4.675e+06" maxx="297914" maxy="4.94158e+06" />
+        <BoundingBox SRS="EPSG:23034"
+                    minx="-437562" miny="4.70806e+06" maxx="-179532" maxy="4.9906e+06" />
+        <BoundingBox SRS="EPSG:25832"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:25833"
+                    minx="57920.8" miny="4.67481e+06" maxx="297844" maxy="4.94138e+06" />
+        <BoundingBox SRS="EPSG:4326"
+                    minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:4230"
+                    minx="9.643428" miny="42.195436" maxx="12.460200" maxy="44.502075" />
+        <BoundingBox SRS="EPSG:4258"
+                    minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:4265"
+                    minx="9.642755" miny="42.193783" maxx="12.459462" maxy="44.500451" />
+        <BoundingBox SRS="EPSG:4806"
+                    minx="-2.809540" miny="42.193786" maxx="0.007126" maxy="44.500443" />
+        <BoundingBox SRS="EPSG:3857"
+                    minx="1.0734e+06" miny="5.19015e+06" maxx="1.38696e+06" maxy="5.54332e+06" />
+        <BoundingBox SRS="EPSG:32632"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+        <BoundingBox SRS="EPSG:32633"
+                    minx="57920.8" miny="4.67481e+06" maxx="297844" maxy="4.94138e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <Style>
+          <Name>contorno_blu_fine_senza_etichetta</Name>
+          <Title>contorno_blu_fine_senza_etichetta</Title>
+          <LegendURL width="31" height="30">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k23.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_senza_etichetta"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>contorno_blu_fine_con_etichetta</Name>
+          <Title>contorno_blu_fine_con_etichetta</Title>
+          <LegendURL width="31" height="30">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k23.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_con_etichetta"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k23.32bit.4R2G3B</Name>
+        <Title>OFC 2023 20cm - 32 bit colore - 4R 2G 3B NirGB Modified False Color (studi di vegetazione di conifere-decidue-erba)</Title>
+        <Abstract>OFC 2023 (GSD 20cm) di proprietà di  Regione Toscana. Riproduzione in falsi colori 4R-2G-3B per gli studi sulla vegetazione (le conifere appaiono rosso scuro, le latifoglie tendono ad essere rappresentate in rossi più luminosi mentre le aree erbose tendono a presentarsi con sfumature rosso-arancio). Copertura del territorio: completa. Foto a 8 bit/canale. </Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k23.32bit.1R4G2B</Name>
+        <Title>OFC 2023 20cm - 32 bit colore - 1R 4G 2B  RNirG False Color</Title>
+        <Abstract>OFC 2023 5K (20cm) riproduzione in falsi colori 1R-4G-2B in falsi colori. I Diritti di proprieta&#39; delle Ortofoto 2023 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k23.32bit.nir</Name>
+        <Title>OFC 2023 20cm - 8 bit - Banda NiR</Title>
+        <Abstract>OFC 2023 (GSD 20cm) di proprietà di  Regione Toscana. Immagine a livelli di grigio banda NiR. Copertura del territorio: completa. Foto a  8 bit/canale.</Abstract>
+        <SRS>EPSG:7791</SRS>
+        <LatLonBoundingBox minx="9.642499" miny="42.194432" maxx="12.459251" maxy="44.501103" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="553009" miny="4.67674e+06" maxx="775238" maxy="4.92775e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_66ca3807-815a-4bd1-b626-98ca240d72a2.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k21.32bit</Name>
+        <Title>OFC 2021 (GSD 20cm) di proprietà di  Regione Toscana. Esecuzione volo IRS srl. Copertura del territorio: completa. Immagini a 8 bit di colore.</Title>
+        <Abstract>OFC 2021 5K (20cm) RGB. I Diritti di proprieta&#39; delle Ortofoto 2021 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:6707</SRS>
+        <LatLonBoundingBox minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_763cc2f1-b018-4461-b1a5-92ac14aea897.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="1" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k21.32bit.qu</Name>
+        <Title>OFC 2021 5k - 32 bit colore - Quadro di unione</Title>
+        <Abstract>Quadro di unione per sezioni del territorio coperto relativo alle OFC 2021, taglio cartografico 1:5.000.</Abstract>
+        <SRS>EPSG:6707</SRS>
+        <LatLonBoundingBox minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:3003"
+                    minx="1.55296e+06" miny="4.67827e+06" maxx="1.77211e+06" maxy="4.92507e+06" />
+        <BoundingBox SRS="EPSG:3004"
+                    minx="2.07796e+06" miny="4.67655e+06" maxx="2.3145e+06" maxy="4.93871e+06" />
+        <BoundingBox SRS="EPSG:6706"
+                    minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+        <BoundingBox SRS="EPSG:6708"
+                    minx="57958.9" miny="4.67654e+06" maxx="294498" maxy="4.93869e+06" />
+        <BoundingBox SRS="EPSG:7791"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+        <BoundingBox SRS="EPSG:6709"
+                    minx="-437463" miny="4.70983e+06" maxx="-183123" maxy="4.98772e+06" />
+        <BoundingBox SRS="EPSG:23032"
+                    minx="553014" miny="4.67845e+06" maxx="772164" maxy="4.92525e+06" />
+        <BoundingBox SRS="EPSG:23033"
+                    minx="58022.3" miny="4.67673e+06" maxx="294568" maxy="4.93889e+06" />
+        <BoundingBox SRS="EPSG:23034"
+                    minx="-437415" miny="4.71002e+06" maxx="-183068" maxy="4.98791e+06" />
+        <BoundingBox SRS="EPSG:25832"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+        <BoundingBox SRS="EPSG:25833"
+                    minx="57958.9" miny="4.67654e+06" maxx="294498" maxy="4.93869e+06" />
+        <BoundingBox SRS="EPSG:4326"
+                    minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:4230"
+                    minx="9.642730" miny="42.210179" maxx="12.419164" maxy="44.477793" />
+        <BoundingBox SRS="EPSG:4258"
+                    minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:4265"
+                    minx="9.642057" miny="42.208526" maxx="12.418427" maxy="44.476169" />
+        <BoundingBox SRS="EPSG:4806"
+                    minx="-2.810238" miny="42.208529" maxx="-0.033909" maxy="44.476161" />
+        <BoundingBox SRS="EPSG:3857"
+                    minx="1.07332e+06" miny="5.19236e+06" maxx="1.38239e+06" maxy="5.53953e+06" />
+        <BoundingBox SRS="EPSG:32632"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+        <BoundingBox SRS="EPSG:32633"
+                    minx="57958.9" miny="4.67654e+06" maxx="294498" maxy="4.93869e+06" />
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_763cc2f1-b018-4461-b1a5-92ac14aea897.htm"/>
+        </MetadataURL>
+        <Style>
+          <Name>contorno_blu_fine_senza_etichetta</Name>
+          <Title>contorno_blu_fine_senza_etichetta</Title>
+          <LegendURL width="31" height="30">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k21.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_senza_etichetta"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>contorno_blu_fine_con_etichetta</Name>
+          <Title>contorno_blu_fine_con_etichetta</Title>
+          <LegendURL width="31" height="30">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/ows_ofc/com.rt.wms.RTmap/wms?map=owsofc_rt&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rt_ofc.5k21.32bit.qu&amp;format=image/png&amp;STYLE=contorno_blu_fine_con_etichetta"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k21.32bit.4R2G3B</Name>
+        <Title>OFC 2021 20cm - 32 bit colore - 4R 2G 3B NirGB Modified False Color (studi di vegetazione di conifere-decidue-erba)</Title>
+        <Abstract>OFC 2021 (GSD 20cm) di proprietà di  Regione Toscana. Riproduzione in falsi colori 4R-2G-3B per gli studi sulla vegetazione (le conifere appaiono rosso scuro, le latifoglie tendono ad essere rappresentate in rossi più luminosi mentre le aree erbose tendono a presentarsi con sfumature rosso-arancio). Copertura del territorio: completa. Foto a 8 bit/canale. </Abstract>
+        <SRS>EPSG:6707</SRS>
+        <LatLonBoundingBox minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_763cc2f1-b018-4461-b1a5-92ac14aea897.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k21.32bit.1R4G2B</Name>
+        <Title>OFC 2021 20cm - 32 bit colore - 1R 4G 2B  RNirG False Color</Title>
+        <Abstract>OFC 2021 5K (20cm) riproduzione in falsi colori 1R-4G-2B in falsi colori. I Diritti di proprieta&#39; delle Ortofoto 2021 sono di Regione Toscana. Scala di visibilita&#39; 1:1 - 1:50.000. Dettaglio 1:5000. Copertura del territorio: completa. Foto a 32 bit di colore.</Abstract>
+        <SRS>EPSG:6707</SRS>
+        <LatLonBoundingBox minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_763cc2f1-b018-4461-b1a5-92ac14aea897.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rt_ofc.5k21.32bit.nir</Name>
+        <Title>OFC 2021 20cm - 8 bit - Banda NiR</Title>
+        <Abstract>OFC 2021 (GSD 20cm) di proprietà di  Regione Toscana. Immagine a livelli di grigio banda NiR. Copertura del territorio: completa. Foto a  8 bit/canale.</Abstract>
+        <SRS>EPSG:6707</SRS>
+        <LatLonBoundingBox minx="9.641801" miny="42.209175" maxx="12.418214" maxy="44.476821" />
+        <BoundingBox SRS="EPSG:6707"
+                    minx="552940" miny="4.67826e+06" maxx="772080" maxy="4.92505e+06" />
+    <Attribution>
+        <Title>Fonte dei dati: Regione Toscana - Base Informativa Territoriale regionale, art. 55 della L.R. 65/2014</Title>
+    </Attribution>
+        <MetadataURL type="TC211">
+          <Format>text/html</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www502.regione.toscana.it/geoscopio/geometa/html/r_toscan_763cc2f1-b018-4461-b1a5-92ac14aea897.htm"/>
+        </MetadataURL>
+        <ScaleHint min="0.000374177136322228" max="1870.88568161114" />
+    </Layer>
+  </Layer>
+</Capability>
+</WMT_MS_Capabilities>

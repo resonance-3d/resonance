@@ -1,0 +1,17 @@
+{
+  "reviewedAt": "2026-09-24",
+  "scope": "Primo inventario parziale: nessuna copertura fotografica completa dichiarata.",
+  "entries": [
+    {"id":"way/282884818","name":"Municipio","status":"authored_interpretation","observed":["Facciata fotografica storica, due portoni con balconi","Due gradinate frontali, due laterali, pianerottolo e muretti presenti nel modello","Spawn frontale e gradini conservati nella verifica browser del 24 settembre"],"unknown":["Quote e numero esatto dei gradini non rilevati","Retro e fianchi non verificati integralmente"],"sources":[{"label":"Foto, autori e limiti del modello approvato","url":"/models/civic/photo-study/SOURCES.md"},{"label":"Riferimenti della sistemazione della piazza","url":"/models/civic/REPUBLIC.md"}]},
+    {"id":"relation/14304368","name":"Villa Giamari","status":"reference_partial","observed":["Nella foto A del 2011: portone ligneo con arco in pietra e sopraluce semicircolare a raggiera; parete intonacata chiara","La foto ravvicinata non copre l'intera facciata né il giardino"],"unknown":["Condizione attuale degli accessi","Facciate complete e raccordo con la strada"],"sources":[{"label":"Villa Giamari A — Massimiliano Galardi, 20/08/2011, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Villa_Giamari_A.jpg"}]},
+    {"id":"relation/3755551","name":"Rocca di Montemurlo","status":"reference_partial","observed":["Foto del 2017: corpo in muratura di pietra con coronamento merlato","Una scala con parapetto è visibile obliquamente, in parte occultata dalla vegetazione","Gli alberi nascondono gran parte del fronte e del basamento"],"unknown":["Numero e quote dei gradini","Posizione metrica della scala fotografata","Fronti non visibili e accessibilità attuale"],"sources":[{"label":"Castello di Montemurlo — Panzagiovanni, 04/09/2017, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Castello_di_Montemurlo.jpg"}]},
+    {"id":"relation/3771891","name":"Scuola Capoluogo","status":"terrain_checked","observed":["Cortile circa 89,65 m nel DTM, con terreno progressivamente più alto a monte","Quote controllate con punti CTR 2000; scuola non forzata a 100 m"],"unknown":["Ingressi, scale e muri attuali da controllare in viste a terra","Facciate reali non ricostruite"],"sources":[{"label":"Rilievo e controlli altimetrici","url":"/data/terrain/SOURCES.md"}]}
+  ],
+  "stairwayWarnings": [
+    {"id":"way/1394598309","note":"OSM indica gradini ma il DTM storico è quasi piatto (differenza circa 3 cm). Servono foto: non eliminare la scala per assenza di dislivello nel raster."},
+    {"id":"way/1394598311","note":"OSM indica gradini ma il DTM storico è quasi piatto (differenza circa 5 cm). Servono foto e raccordo con i nuovi percorsi."},
+    {"id":"way/312444651","note":"Percorso breve vicino alla Rocca: variazione DTM inferiore a 10 cm. Numero e direzione dei gradini non desumibili dal raster."},
+    {"id":"way/428466583","note":"Percorso con più cambi di direzione: verificare rampe, pianerottoli e scalinate separate, non sostituirlo con una sola rampa continua."}
+  ],
+  "coverage": {"aerial":"Ortofoto regionale 2024/2025 sull'intero rettangolo di estrazione","streetLevel":"Parziale, storica, insufficiente per completare tutti i settori","stairs":"13 tratti OSM censiti; due già rappresentati nei percorsi del parco, gli altri da verificare. Le scale del municipio sono override separati."}
+}

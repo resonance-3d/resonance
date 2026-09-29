@@ -1,0 +1,85 @@
+{
+  "startedAt": "2026-09-24T15:50:44Z",
+  "objective": "Ricostruzione progressiva nel raggio di 1000 m dal municipio di Montemurlo",
+  "status": "geographic_base_delivered_faithful_reconstruction_incomplete",
+  "baseline": {
+    "limitId": "codex",
+    "usedPercent": 14,
+    "windowDurationMins": 10080,
+    "resetsAt": 1790848612,
+    "scope": "account-wide",
+    "secondaryWindow": null
+  },
+  "tokenCount": null,
+  "tokenCountReason": "Non esposto dal contatore account disponibile",
+  "notes": [
+    "Differenza account: altri task possono contribuire; non equivale al costo di un km completo.",
+    "Il delta misura questa preparazione e base geografica, non una ricostruzione fedele completata di 3,142 km².",
+    "Altri task contemporanei e arrotondamento del contatore possono influenzare la differenza. Token e costo API non disponibili."
+  ],
+  "renderBaseline": {
+    "view": "spawn davanti al municipio, camera predefinita, fermo",
+    "browser": "Codex in-app",
+    "fps": 30,
+    "frameTimeP95Ms": 34,
+    "measurement": "Indicatore applicazione, finestra mobile 2 secondi, lettura dopo il caricamento. Non benchmark controllato o misura GPU.",
+    "geometryBuildings": 1104
+  },
+  "measuredUntil": "2026-09-24T16:26:53.366945+00:00",
+  "finalUsage": {
+    "usedPercent": 19,
+    "windowDurationMins": 10080,
+    "resetsAt": 1790848612,
+    "scope": "account-wide"
+  },
+  "accountDeltaPercentagePoints": 5,
+  "elapsedMinutes": 36.2,
+  "completedScope": {
+    "radiusMetres": 1000,
+    "areaKm2": 3.14159265,
+    "targetBuildings": 1278,
+    "bufferBuildings": 1693,
+    "sectors": 101,
+    "fullyVerifiedSectors": 0,
+    "mappedStairways": 13,
+    "dtmSamples": 5044516,
+    "dtmBytes": 10089032,
+    "imageryTiles": 21,
+    "imageryBytes": 5978766,
+    "runtimeGeographicJsonBytes": 997803,
+    "automaticHeightEstimatesInRectangle": 1567
+  },
+  "renderAfter": {
+    "viewport": [
+      1280,
+      720
+    ],
+    "views": [
+      {
+        "view": "spawn davanti al municipio, camera predefinita, fermo",
+        "fps": 30,
+        "frameTimeP95Ms": 34
+      },
+      {
+        "view": "panoramica predefinita, ortofoto caricate",
+        "fps": 30,
+        "frameTimeP95Ms": 34
+      }
+    ],
+    "method": "Indicatore app, finestra mobile 2 s dopo caricamento, Codex in-app browser. Nessuna misura GPU; non dimostra assenza di stutter durante movimento o margine per 60 fps."
+  },
+  "validation": {
+    "testsPassed": 45,
+    "testsFailed": 0,
+    "build": "passed",
+    "qualityGate": "coherent draft; 0 of 101 sectors fully visually verified",
+    "browser": "municipal front stairs retained; imagery aligned and clipped to rectangle; atlas selection and zoom checked",
+    "knownBuildWarning": "Cesium bundle exceeds configured chunk warning threshold"
+  },
+  "remaining": [
+    "Copertura fotografica a terra insufficiente per tutte le facciate",
+    "Ricostruzione delle ulteriori scalinate e dei muri censiti",
+    "Tetti ordinari ancora piani e facciate generiche",
+    "Verifica di accessi, soglie, arredi, percorsi e fedeltà per ciascun settore"
+  ]
+}

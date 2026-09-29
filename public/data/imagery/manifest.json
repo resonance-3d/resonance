@@ -1,0 +1,18 @@
+{
+  "bounds": {
+    "west": 11.023,
+    "south": 43.9171,
+    "east": 11.051,
+    "north": 43.9373
+  },
+  "maximumLevel": 2,
+  "tileSize": 1024,
+  "sourceLayer": "rt_ofc.5k24.32bit",
+  "surveyLabel": "2024/2025 (date puntuali non verificate)",
+  "license": "CC BY 4.0",
+  "attribution": "Ortofoto 2024/2025: Regione Toscana \u00b7 CC BY 4.0",
+  "sourceUrl": "https://www502.regione.toscana.it/geoscopio/servizi/wms/OFC_RT.htm",
+  "tileCount": 21,
+  "totalBytes": 5978766,
+  "fetchSeconds": 16.84
+}

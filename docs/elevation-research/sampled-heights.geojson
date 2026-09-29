@@ -1,0 +1,88 @@
+{
+  "type": "FeatureCollection",
+  "source": "Fonte dei dati: Regione Toscana \u2013 Rilievi LIDAR",
+  "license": "CC BY 4.0",
+  "vertical_reference": "Source geoid-related elevation; not WGS84 ellipsoidal height",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03689,
+          43.92705
+        ]
+      },
+      "properties": {
+        "name": "Fronte municipio",
+        "tile": "20j10",
+        "dtm_height_m": 75.102,
+        "neighbourhood_3m_range": [
+          74.692,
+          75.242
+        ],
+        "survey_year": 2010
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03684,
+          43.92768
+        ]
+      },
+      "properties": {
+        "name": "Piazza della Libert\u00e0",
+        "tile": "20j10",
+        "dtm_height_m": 76.424,
+        "neighbourhood_3m_range": [
+          76.424,
+          76.474
+        ],
+        "survey_year": 2010
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03865,
+          43.92921
+        ]
+      },
+      "properties": {
+        "name": "Cortile scuola Capoluogo",
+        "tile": "20j02",
+        "dtm_height_m": 89.681,
+        "neighbourhood_3m_range": [
+          89.491,
+          89.761
+        ],
+        "survey_year": 2010
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03845,
+          43.92894
+        ]
+      },
+      "properties": {
+        "name": "Strada a sud della scuola",
+        "tile": "20j10",
+        "dtm_height_m": 88.95,
+        "neighbourhood_3m_range": [
+          88.79,
+          89.08
+        ],
+        "survey_year": 2010
+      }
+    }
+  ]
+}
